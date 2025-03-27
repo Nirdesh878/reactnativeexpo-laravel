@@ -16,12 +16,16 @@ const LoginScreen = ({ navigation }) => {
   const [visible, setVisible] = useState(false);
 
   // const redirectUri = AuthSession.makeRedirectUri({ useProxy: true });
-  const redirectUri = "com.nirdesh1234.myReactNative:/oauthredirect";
-
+  const redirectUri = AuthSession.makeRedirectUri({
+    scheme: "myReactNative",
+  });
+  
+  console.log("Redirect URI:", redirectUri);
+  
   const [request, response, promptAsync] = Google.useAuthRequest({
     androidClientId: "96114857371-ap1al0fh6gj498gf28knaegsg6cvadaa.apps.googleusercontent.com",
     webClientId: "96114857371-l0r5s5pp154l5qjni2gjn3f9o34jd5f2.apps.googleusercontent.com",
-    redirectUri, // Use Expo-generated redirect URI
+    redirectUri, // Use the Expo AuthSession proxy
     scopes: ["profile", "email"],
   });
 
