@@ -1,0 +1,15 @@
+# Laravel ignores
+/myApp/vendor
+/myApp/node_modules
+/myApp/.env
+/myApp/storage
+/myApp/bootstrap/cache
+
+# React Native ignores
+/myReactNative/node_modules
+/myReactNative/.expo
+/myReactNative/.expo-shared
+/myReactNative/.vscode
+/myReactNative/dist
+/myReactNative/ios
+/myReactNative/android

@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "myReactNative",
+    "slug": "myReactNative",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nirdesh.myapp",
+      "config": {
+        "googleSignIn": {
+          "webClientId": "96114857371-l0r5s5pp154l5qjni2gjn3f9o34jd5f2.apps.googleusercontent.com"
+        }
+      }
+    },
+    "android": {
+      "package": "com.nirdesh.myapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleSignIn": {
+          "webClientId": "96114857371-l0r5s5pp154l5qjni2gjn3f9o34jd5f2.apps.googleusercontent.com"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cc5870af-5363-49d3-bd96-33958b01d2c4"
+      },
+      "googleAuth": {
+        "clientId": "96114857371-l0r5s5pp154l5qjni2gjn3f9o34jd5f2.apps.googleusercontent.com"
+      }
+    },
+    "owner": "nirdesh1234",
+    "scheme": "myreactnative",
+    "platforms": ["android", "ios"]
+  }
+}
